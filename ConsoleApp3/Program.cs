@@ -11,19 +11,24 @@ namespace ConsoleApp3
         static void Main(string[] args)
         {
 
-            string name = "Najiip Daahir guure"; 
+            string name = "Najiip daahir guure";
             Console.WriteLine("Name: " + name);
             string mothername = "Xamdi Ali";
             Console.WriteLine("Momother'Name: " + mothername);
-            string dop = "2000-05-16";
-            Console.WriteLine("Date Of Birth: " + dop);
+
+            int birthYear = 2000;
+            int birthMonth = 05;
+            int birthDay = 15;
+            DateTime dob = new DateTime(birthYear, birthMonth, birthDay);
+            Console.WriteLine("Date Of Birth: " + dob.ToString("yyyy-MM-dd"));
+
             string pob = "Galkio";
-            Console.WriteLine("Place Of Pirt: " + pob);
+            Console.WriteLine("Place Of Pirth: " + pob);
             string address = "Garsoor";
             Console.WriteLine("Address: " + address);
             int telphone = 097765567;
             Console.WriteLine("Telphone: " + telphone);
-            string sex = "Female";
+            string sex = "male";
             Console.WriteLine("Sex: " + sex);
             string status = "Single";
             Console.WriteLine("Status: " + status);
